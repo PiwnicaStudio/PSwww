@@ -2,25 +2,79 @@
 <title>PiwnicaStudio</title>
 </head>
 
-<!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
-
-<!-- Tab content -->
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
+%h1 Default
+.tabbed
+  %ul
+    %li Third tab
+    %li Second tab
+    %li.active First tab
+%h2 With round corners
+.tabbed.round
+  %ul
+    %li Third tab
+    %li Second tab
+    %li.active First tab
+%br/
+%br/
+%br/
+%h1 Skins
+%h2 Flat
+.config-group
+  .switcher-box{:style => "margin-top: 7px;"}
+    %a.skin-turquoise.active{:skin => "skin-turquoise"}
+      %span
+    %a.skin-emerald{:skin => "skin-emerald"}
+      %span
+    %a.skin-peter-river{:skin => "skin-peter-river"}
+      %span
+    %a.skin-amethyst{:skin => "skin-amethyst"}
+      %span
+    %a.color.skin-wet-asphalt{:skin => "skin-wet-asphalt"}
+      %span
+    %a.skin-sun-flower{:skin => "skin-sun-flower"}
+      %span
+    %a.skin-carrot{:skin => "skin-carrot"}
+      %span
+    %a.skin-alizarin{:skin => "skin-alizarin"}
+      %span
+    %a.skin-graphite{:skin => "skin-graphite"}
+      %span
+    %a.skin-concrete{:skin => "skin-concrete"}
+      %span
+    %a.skin-green-sea{:skin => "skin-green-sea"}
+      %span
+    %a.skin-nephritis{:skin => "skin-nephritis"}
+      %span
+    %a.skin-belize-hole{:skin => "skin-belize-hole"}
+      %span
+    %a.skin-wisteria{:skin => "skin-wisteria"}
+      %span
+    %a.skin-midnight-blue{:skin => "skin-midnight-blue"}
+      %span
+    %a.skin-orange{:skin => "skin-orange"}
+      %span
+    %a.skin-pumpkin{:skin => "skin-pumpkin"}
+      %span
+    %a.skin-pomegranate{:skin => "skin-pomegranate"}
+      %span
+    %a.skin-silver{:skin => "skin-silver"}
+      %span
+    %a.skin-asbestos{:skin => "skin-asbestos"}
+      %span
+    %a.skin-dodgerblue{:skin => "skin-dodgerblue"}
+      %span
+    %br/
+    %br/
+    %br/
+    %h2 Multicolor
+    %a.skin-gray-black{:skin => "skin-gray-black"}
+      %span
+    %a.skin-black-glass{:skin => "skin-black-glass"}
+      %span
+#skinable.tabbed.skin-turquoise.round
+  %ul
+    %li Third tab
+    %li Second tab
+    %li.active First tab
+      
+%a.iprodev{"href" => "http://iprodev.com", "target" => "_blank"} iprodev.com
